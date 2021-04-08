@@ -1,7 +1,8 @@
 html,
 body {
   -webkit-text-size-adjust: none;
-  -webkit-overflow-scrolling: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -51,11 +52,11 @@ fieldset {
   border: 0 none;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="submit"],
-input[type="search"],
-input[type="number"],
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+input[type='search'],
+input[type='number'],
 textarea {
   -webkit-appearance: none;
 }
@@ -88,6 +89,7 @@ button {
   border: 0 none;
   background: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 table caption {

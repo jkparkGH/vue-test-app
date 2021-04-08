@@ -40,18 +40,6 @@ export default class HalfTop extends Vue {
 <style lang="scss" scoped>
 $modules: 'modal-content-top';
 .#{$modules} {
-  // half top & bottom 공통부분
-  & {
-    position: fixed;
-    width: 100%;
-    height: 50%;
-    left: 0;
-    z-index: 4;
-    transition: transform 0.42s;
-    transition-timing-function: cubic-bezier(1, 0, 0.43, 1.12);
-    background-size: 100% 100%;
-  }
-
   bottom: 50%;
   transform: translateY(-800px);
   background-image: url('~@/assets/images/event_smtm_modal/bg_modal_top.png');

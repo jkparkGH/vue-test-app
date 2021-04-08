@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import EventSmtm from "@/components/events/smtm/index.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import { EventSmtm } from '@/components/events/smtm';
 
 @Component({
   components: {
-    EventSmtm
-  }
+    EventSmtm,
+  },
 })
 export default class Events extends Vue {}
 </script>

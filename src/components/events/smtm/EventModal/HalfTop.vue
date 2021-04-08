@@ -12,11 +12,14 @@
       src="@/assets/images/event_smtm_modal/img_modal_symbol.png"
       alt=""
     />
-    <img
-      class="modal-content-top__title"
-      src="@/assets/images/event_smtm_modal/img_modal_title_text.png"
-      alt="이벤트 계좌로 1원 보내봐!"
-    />
+
+    <picture class="modal-content-top__title">
+      <source
+        srcset="@/assets/images/event_smtm_modal/img_modal_title_text.webp"
+        type="image/webp"
+      />
+      <img src="@/assets/images/event_smtm_modal/img_modal_title_text.png" alt="" />
+    </picture>
   </div>
 </template>
 
@@ -42,7 +45,7 @@ $modules: 'modal-content-top';
 .#{$modules} {
   bottom: 50%;
   transform: translateY(-800px);
-  background-image: url('~@/assets/images/event_smtm_modal/bg_modal_top.png');
+  background-image: url('~@/assets/images/event_smtm_modal/bg_modal_top.webp');
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -82,6 +85,14 @@ $modules: 'modal-content-top';
     width: 266px;
     align-self: center;
     padding: 20px 0 30px;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
+}
+
+.no-webp .modal-content-top {
+  background-image: url('~@/assets/images/event_smtm_modal/bg_modal_top.png');
 }
 </style>

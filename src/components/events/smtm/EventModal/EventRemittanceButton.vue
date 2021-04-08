@@ -43,7 +43,7 @@ $modules: 'event-button';
       width: 100%;
       height: 60px;
       font-size: 0px;
-      background-image: url('~@/assets/images/event_smtm/btn_goldbar_bottom_bg.png');
+      background-image: url('~@/assets/images/event_smtm/btn_goldbar_bottom_bg.webp');
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 6px;
@@ -68,5 +68,9 @@ $modules: 'event-button';
       }
     }
   }
+}
+
+.no-webp .event-button__container button {
+  background-image: url('~@/assets/images/event_smtm/btn_goldbar_bottom_bg.png');
 }
 </style>

@@ -1,10 +1,13 @@
 <template>
   <section class="reword-symbol">
-    <img
-      class="reword-symbol__symbol-money"
-      src="@/assets/images/event_smtm/bg_symbol_g_money.png"
-      alt=""
-    />
+    <picture>
+      <source srcset="@/assets/images/event_smtm/bg_symbol_g_money.webp" type="image/webp" />
+      <img
+        class="reword-symbol__symbol-money"
+        src="@/assets/images/event_smtm/bg_symbol_g_money.png"
+        alt=""
+      />
+    </picture>
 
     <div class="reword-symbol__bang-hands-container">
       <img

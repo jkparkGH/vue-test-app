@@ -68,12 +68,6 @@ $modules: 'event-modal';
     background-size: 100% 100%;
   }
 
-  &__half-bottom {
-    top: 50%;
-    transform: translateY(800px);
-    background-image: url('~@/assets/images/event_smtm_modal/bg_modal_bottom.png');
-  }
-
   &.is-show {
     &:before {
       z-index: 0;

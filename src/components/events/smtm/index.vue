@@ -7,10 +7,10 @@
       <RewordSymbol />
       <RewordInfo />
       <LinkSns />
-      <MainButton :is-show-modal.sync="isShowModal" />
       <Coins />
-      <EventFooter />
+      <MainButton :is-show-modal.sync="isShowModal" />
       <EventModal :is-show-modal.sync="isShowModal" />
+      <EventFooter />
     </section>
   </main>
 </template>
@@ -81,7 +81,7 @@ $modules: 'event-smtm';
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    background-image: url('~@/assets/images/event_smtm/bg_event_main.png');
+    background-image: url('~@/assets/images/event_smtm/bg_event_main.webp');
     background-size: cover;
     background-attachment: fixed;
   }
@@ -97,5 +97,9 @@ $modules: 'event-smtm';
       }
     }
   }
+}
+
+.no-webp .event-smtm__mobile-layout {
+  background-image: url('~@/assets/images/event_smtm/bg_event_main.png');
 }
 </style>

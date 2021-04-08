@@ -53,7 +53,7 @@ $modules: 'modal-content-bottom';
 .#{$modules} {
   top: 50%;
   transform: translateY(800px);
-  background-image: url('~@/assets/images/event_smtm_modal/bg_modal_bottom.png');
+  background-image: url('~@/assets/images/event_smtm_modal/bg_modal_bottom.webp');
 
   &__1won-coupon-container,
   &__announce {
@@ -136,5 +136,9 @@ $modules: 'modal-content-bottom';
       }
     }
   }
+}
+
+.no-webp .modal-content-bottom {
+  background-image: url('~@/assets/images/event_smtm_modal/bg_modal_bottom.png');
 }
 </style>

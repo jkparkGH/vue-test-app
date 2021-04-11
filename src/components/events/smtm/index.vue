@@ -58,6 +58,12 @@ export default class EventSmtm extends Vue {
     this.isMobile = deviceMobileCheck() || deviceTabletCheck();
     this.isWebpUsable = checkWebPSupport();
     this.setBackgroundBody(true);
+
+    if (!this.isMobile) {
+      alert(
+        'Chrome DevTools로 모바일 화면을 확인해주세요 \n(Windows) Ctrl + Shift + I 또는 (Mac) Cmd + Opt + I \n375 x 667 해상도(iPhone6/7/8)에 최적화 되어있습니다'
+      );
+    }
   }
 
   created() {

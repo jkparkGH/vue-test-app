@@ -1,17 +1,12 @@
 <template>
   <div class="events-container">
-    <EventSmtm />
+    <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { EventSmtm } from '@/components/events/smtm';
 
-@Component({
-  components: {
-    EventSmtm,
-  },
-})
+@Component
 export default class Events extends Vue {}
 </script>

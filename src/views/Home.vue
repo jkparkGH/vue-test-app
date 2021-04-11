@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <MainLanding />
+    <HomeComponent />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import MainLanding from "@/components/home/index.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import { HomeComponent } from '@/components/home';
 
 @Component({
   components: {
-    MainLanding
-  }
+    HomeComponent,
+  },
 })
 export default class Home extends Vue {}
 </script>
